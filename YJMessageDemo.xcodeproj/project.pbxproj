@@ -15,6 +15,12 @@
 		C2C49A6C1C085E2800F1AE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C49A6A1C085E2800F1AE21 /* LaunchScreen.storyboard */; };
 		C2C49A771C085E2800F1AE21 /* YJMessageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C49A761C085E2800F1AE21 /* YJMessageDemoTests.m */; };
 		C2C49A821C085E2800F1AE21 /* YJMessageDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C49A811C085E2800F1AE21 /* YJMessageDemoUITests.m */; };
+		C2C49A981C085E6600F1AE21 /* YJMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C49A931C085E6600F1AE21 /* YJMessage.m */; };
+		C2C49A991C085E6600F1AE21 /* YJMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C49A951C085E6600F1AE21 /* YJMessageView.m */; };
+		C2C49AA11C085EB100F1AE21 /* yjmessage_error.png in Resources */ = {isa = PBXBuildFile; fileRef = C2C49A9D1C085EB100F1AE21 /* yjmessage_error.png */; };
+		C2C49AA21C085EB100F1AE21 /* yjmessage_info.png in Resources */ = {isa = PBXBuildFile; fileRef = C2C49A9E1C085EB100F1AE21 /* yjmessage_info.png */; };
+		C2C49AA31C085EB100F1AE21 /* yjmessage_success.png in Resources */ = {isa = PBXBuildFile; fileRef = C2C49A9F1C085EB100F1AE21 /* yjmessage_success.png */; };
+		C2C49AA41C085EB100F1AE21 /* yjmessage_warning.png in Resources */ = {isa = PBXBuildFile; fileRef = C2C49AA01C085EB100F1AE21 /* yjmessage_warning.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,14 @@
 		C2C49A7D1C085E2800F1AE21 /* YJMessageDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJMessageDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C49A811C085E2800F1AE21 /* YJMessageDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJMessageDemoUITests.m; sourceTree = "<group>"; };
 		C2C49A831C085E2800F1AE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2C49A921C085E6600F1AE21 /* YJMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YJMessage.h; path = Classes/YJMessage.h; sourceTree = "<group>"; };
+		C2C49A931C085E6600F1AE21 /* YJMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YJMessage.m; path = Classes/YJMessage.m; sourceTree = "<group>"; };
+		C2C49A941C085E6600F1AE21 /* YJMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YJMessageView.h; path = Classes/YJMessageView.h; sourceTree = "<group>"; };
+		C2C49A951C085E6600F1AE21 /* YJMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YJMessageView.m; path = Classes/YJMessageView.m; sourceTree = "<group>"; };
+		C2C49A9D1C085EB100F1AE21 /* yjmessage_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yjmessage_error.png; path = Classes/Resources/yjmessage_error.png; sourceTree = "<group>"; };
+		C2C49A9E1C085EB100F1AE21 /* yjmessage_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yjmessage_info.png; path = Classes/Resources/yjmessage_info.png; sourceTree = "<group>"; };
+		C2C49A9F1C085EB100F1AE21 /* yjmessage_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yjmessage_success.png; path = Classes/Resources/yjmessage_success.png; sourceTree = "<group>"; };
+		C2C49AA01C085EB100F1AE21 /* yjmessage_warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yjmessage_warning.png; path = Classes/Resources/yjmessage_warning.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 		C2C49A501C085E2800F1AE21 = {
 			isa = PBXGroup;
 			children = (
+				C2C49A8F1C085E4F00F1AE21 /* YJMessage */,
 				C2C49A5B1C085E2800F1AE21 /* YJMessageDemo */,
 				C2C49A751C085E2800F1AE21 /* YJMessageDemoTests */,
 				C2C49A801C085E2800F1AE21 /* YJMessageDemoUITests */,
@@ -138,6 +153,37 @@
 				C2C49A831C085E2800F1AE21 /* Info.plist */,
 			);
 			path = YJMessageDemoUITests;
+			sourceTree = "<group>";
+		};
+		C2C49A8F1C085E4F00F1AE21 /* YJMessage */ = {
+			isa = PBXGroup;
+			children = (
+				C2C49A9B1C085E8C00F1AE21 /* Resources */,
+				C2C49A9A1C085E7500F1AE21 /* YJMessageView */,
+				C2C49A921C085E6600F1AE21 /* YJMessage.h */,
+				C2C49A931C085E6600F1AE21 /* YJMessage.m */,
+			);
+			name = YJMessage;
+			sourceTree = "<group>";
+		};
+		C2C49A9A1C085E7500F1AE21 /* YJMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				C2C49A941C085E6600F1AE21 /* YJMessageView.h */,
+				C2C49A951C085E6600F1AE21 /* YJMessageView.m */,
+			);
+			name = YJMessageView;
+			sourceTree = "<group>";
+		};
+		C2C49A9B1C085E8C00F1AE21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2C49A9D1C085EB100F1AE21 /* yjmessage_error.png */,
+				C2C49A9E1C085EB100F1AE21 /* yjmessage_info.png */,
+				C2C49A9F1C085EB100F1AE21 /* yjmessage_success.png */,
+				C2C49AA01C085EB100F1AE21 /* yjmessage_warning.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +289,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C49AA41C085EB100F1AE21 /* yjmessage_warning.png in Resources */,
+				C2C49AA31C085EB100F1AE21 /* yjmessage_success.png in Resources */,
 				C2C49A6C1C085E2800F1AE21 /* LaunchScreen.storyboard in Resources */,
 				C2C49A691C085E2800F1AE21 /* Assets.xcassets in Resources */,
+				C2C49AA21C085EB100F1AE21 /* yjmessage_info.png in Resources */,
 				C2C49A671C085E2800F1AE21 /* Main.storyboard in Resources */,
+				C2C49AA11C085EB100F1AE21 /* yjmessage_error.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C49A981C085E6600F1AE21 /* YJMessage.m in Sources */,
+				C2C49A991C085E6600F1AE21 /* YJMessageView.m in Sources */,
 				C2C49A641C085E2800F1AE21 /* ViewController.m in Sources */,
 				C2C49A611C085E2800F1AE21 /* AppDelegate.m in Sources */,
 				C2C49A5E1C085E2800F1AE21 /* main.m in Sources */,
