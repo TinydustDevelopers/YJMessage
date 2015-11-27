@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YJMessage.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)showErrorMessage:(id)sender {
+    
+    [YJMessage showMessageInViewController:self
+                                     Title:@"//  hey, error!"
+                                  duration:3.0f
+                                  type:YJMessageTypeError
+                                  callback:nil
+                               buttonTitle:@"tap me"
+                            buttonCallback:^{
+                                
+                                NSLog(@"Tapped...");
+                            }];
 }
 
 @end

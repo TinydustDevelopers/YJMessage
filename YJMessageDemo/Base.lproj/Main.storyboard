@@ -17,14 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ft-zJ-PhO">
-                                <rect key="frame" x="90" y="260" width="141" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ft-zJ-PhO">
+                                <rect key="frame" x="90" y="269" width="141" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Show Error Message"/>
+                                <connections>
+                                    <action selector="showErrorMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNe-dT-iD1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93323183059692383" green="0.9333917498588562" blue="0.93322181701660156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Ft-zJ-PhO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LqV-pt-Wnd"/>
+                            <constraint firstItem="6Ft-zJ-PhO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ON5-lt-eyw"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
