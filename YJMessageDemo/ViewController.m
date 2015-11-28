@@ -25,7 +25,7 @@
     
     [YJMessage showMessageInViewController:self
                                      Title:@"//  hey, error!"
-                                  duration:3.0f
+                                  duration:1.5f
                                   type:YJMessageTypeError
                                   callback:nil
                                buttonTitle:@"tap me"
