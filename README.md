@@ -6,6 +6,14 @@ A library that displays message in iOS app with Android Snackbar-like style.
 
 ![demo.gif](./images/demo.gif)
 
+## Installation
+
+Add the following line in your Podfile:
+
+```
+pod "YJMessage"
+```
+
 ## Usage
 
 The usage is simple, similar to TSMessages.
