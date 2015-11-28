@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
   A library that displays message in iOS app with Android Snackbar-like style.
                    DESC
 
-  s.homepage     = "http://github.com/TinydustDevelopers/YJMessage"
-  s.screenshots  = "https://github.com/TinydustDevelopers/YJMessage/blob/master/images/demo.gif"
+  s.homepage     = "https://github.com/TinydustDevelopers/YJMessage"
+  s.screenshots  = "https://raw.githubusercontent.com/TinydustDevelopers/YJMessage/master/images/demo.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/TinydustDevelopers/YJMessage.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/TinydustDevelopers/YJMessage.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
