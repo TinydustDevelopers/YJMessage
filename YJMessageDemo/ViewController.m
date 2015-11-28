@@ -24,13 +24,12 @@
 - (IBAction)showErrorMessage:(id)sender {
     
     [YJMessage showMessageInViewController:self
-                                     Title:@"//  hey, error!"
+                                     title:@"hey, error!"
                                   duration:1.5f
-                                  type:YJMessageTypeError
+                                      type:YJMessageTypeError
                                   callback:nil
                                buttonTitle:@"tap me"
                             buttonCallback:^{
-                                
                                 NSLog(@"Tapped...");
                             }];
 }

@@ -10,17 +10,17 @@
 
 @implementation YJMessage
 
-+ (void)showMessageInViewController:(UIViewController *)viewController Title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type {
++ (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type {
     
-    [YJMessage showMessageInViewController:viewController Title:title duration:duration type:type callback:nil];
+    [YJMessage showMessageInViewController:viewController title:title duration:duration type:type callback:nil];
 }
 
-+ (void)showMessageInViewController:(UIViewController *)viewController Title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback {
++ (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback {
  
-    [YJMessage showMessageInViewController:viewController Title:title duration:duration type:type callback:callback buttonTitle:nil buttonCallback:nil];
+    [YJMessage showMessageInViewController:viewController title:title duration:duration type:type callback:callback buttonTitle:nil buttonCallback:nil];
 }
 
-+ (void)showMessageInViewController:(UIViewController *)viewController Title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback buttonTitle:(NSString *)buttonTitle buttonCallback:(YJMessageButtonClickCallBack)buttonCallback {
++ (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback buttonTitle:(NSString *)buttonTitle buttonCallback:(YJMessageButtonClickCallBack)buttonCallback {
     
     YJMessageView *messageView = [[YJMessageView alloc] initWithTitle:title duration:duration type:type callback:callback buttonTitle:buttonTitle buttonCallback:buttonCallback];
     
