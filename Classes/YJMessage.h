@@ -11,10 +11,10 @@
 
 @interface YJMessage : NSObject
 
-+ (void)showMessageInViewController:(UIViewController *)viewController Title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type;
++ (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type;
 
-+ (void)showMessageInViewController:(UIViewController *)viewController Title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback buttonTitle:(NSString *)buttonTitle buttonCallback:(YJMessageButtonClickCallBack)buttonCallback;
++ (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback buttonTitle:(NSString *)buttonTitle buttonCallback:(YJMessageButtonClickCallBack)buttonCallback;
 
-+ (void)showMessageInViewController:(UIViewController *)viewController Title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback;
++ (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback;
 
 @end
