@@ -25,6 +25,7 @@ const static CGFloat kYJMessageButtonMarginRight = 0;
 @property (copy) void (^buttonCallback)();
 @property (nonatomic) NSTimeInterval duration;
 @property (strong, nonatomic) UIView *containerView;
+@property (nonatomic) BOOL animating;
 
 @end
 
@@ -114,6 +115,12 @@ const static CGFloat kYJMessageButtonMarginRight = 0;
 
 - (void)dismiss {
     
+    if (self.animating) {
+        
+        return;
+    }
+    self.animating = YES;
+    
     CGFloat distance = self.frame.size.height + kYJMessageViewMarginBottom;
     __weak __typeof(self) wself = self;
     [UIView animateWithDuration:kYJMessageShowAnimationDuration
@@ -128,6 +135,11 @@ const static CGFloat kYJMessageButtonMarginRight = 0;
                          wself.frame = frame;
                      }
                      completion:^(BOOL finished) {
+                         
+                         if (wself.callback) {
+                             
+                             wself.callback();
+                         }
                          
                          [wself removeFromSuperview];
                      }];

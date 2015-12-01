@@ -27,7 +27,10 @@
                                      Title:@"//  hey, error!"
                                   duration:1.5f
                                   type:YJMessageTypeError
-                                  callback:nil
+                                  callback:^{
+                                      
+                                      NSLog(@"COMPLETE");
+                                  }
                                buttonTitle:@"tap me"
                             buttonCallback:^{
                                 
