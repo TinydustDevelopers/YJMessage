@@ -17,12 +17,13 @@
 
 + (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback {
  
-    [YJMessage showMessageInViewController:viewController title:title duration:duration type:type callback:callback buttonTitle:nil buttonCallback:nil];
+    [YJMessage showMessageInViewController:viewController title:title duration:duration type:type callback:callback buttonTitle:nil buttonCallback:nil canDismissedByUser:YES];
 }
 
-+ (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback buttonTitle:(NSString *)buttonTitle buttonCallback:(YJMessageButtonClickCallBack)buttonCallback {
++ (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback buttonTitle:(NSString *)buttonTitle buttonCallback:(YJMessageButtonClickCallBack)buttonCallback canDismissedByUser:(BOOL)canDismissedByUser{
     
     YJMessageView *messageView = [[YJMessageView alloc] initWithTitle:title duration:duration type:type callback:callback buttonTitle:buttonTitle buttonCallback:buttonCallback];
+    messageView.canDismissedByUser = canDismissedByUser;
     
     UIViewController *attachViewController = viewController;
     

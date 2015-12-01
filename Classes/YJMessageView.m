@@ -218,6 +218,31 @@ const static CGFloat kYJMessageButtonMarginRight = 0;
             return UIColorFromRGB(0xF2A440);
     }
 }
+
+#pragma mark - touch event 
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [super touchesEnded:touches withEvent:event];
+    if (!self.canDismissedByUser) {
+        
+        return;
+    }
+    
+    if (!self.button) {
+        
+        [self dismiss];
+    }
+    
+    UITouch *touch = [touches anyObject];
+    CGPoint p = [touch locationInView: self];
+    
+    if (!CGRectContainsPoint(self.button.frame, p)) {
+        
+        [self dismiss];
+    }
+}
+
 #pragma mark - accessor
 
 - (UIView *)containerView {

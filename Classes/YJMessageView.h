@@ -27,6 +27,8 @@ static const NSTimeInterval kYJMessageShowAnimationDuration = 0.15;
 
 @interface YJMessageView : UIView
 
+@property (nonatomic) BOOL canDismissedByUser;
+
 - (instancetype)initWithTitle:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback buttonTitle:(NSString *)buttonTitle buttonCallback:(YJMessageButtonClickCallBack)buttonCallback;
 
 @end

@@ -25,7 +25,7 @@
     
     [YJMessage showMessageInViewController:self
                                      title:@"hey, error!"
-                                  duration:1.5f
+                                  duration:3.0f
                                   type:YJMessageTypeError
                                   callback:^{
                                       
@@ -34,7 +34,8 @@
                                buttonTitle:@"tap me"
                             buttonCallback:^{
                                 NSLog(@"Tapped...");
-                            }];
+                            }
+                        canDismissedByUser:YES];
 }
 
 @end
