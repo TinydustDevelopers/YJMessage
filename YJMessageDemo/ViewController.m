@@ -24,7 +24,7 @@
 - (IBAction)showErrorMessage:(id)sender {
     
     [YJMessage showMessageInViewController:self
-                                     title:@"hey, error!"
+                                     title:@"hey, error!hey, error!hey, error!hey, e"
                                   duration:3.0f
                                   type:YJMessageTypeError
                                   callback:^{

@@ -22,7 +22,7 @@
 
 + (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback buttonTitle:(NSString *)buttonTitle buttonCallback:(YJMessageButtonClickCallBack)buttonCallback {
     
-    [YJMessage showMessageInViewController:viewController title:title duration:duration type:type callback:callback buttonTitle:nil buttonCallback:nil canDismissedByUser:YES];
+    [YJMessage showMessageInViewController:viewController title:title duration:duration type:type callback:callback buttonTitle:buttonTitle buttonCallback:buttonCallback canDismissedByUser:YES];
 }
 
 + (void)showMessageInViewController:(UIViewController *)viewController title:(NSString *)title duration:(NSTimeInterval)duration type:(YJMessageType)type callback:(YJMessageCompletion)callback buttonTitle:(NSString *)buttonTitle buttonCallback:(YJMessageButtonClickCallBack)buttonCallback canDismissedByUser:(BOOL)canDismissedByUser{
