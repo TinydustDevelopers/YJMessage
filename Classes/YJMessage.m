@@ -34,10 +34,10 @@
     
 //    tabbar offset
     CGFloat offset = viewController.tabBarController.tabBar.frame.size.height;
-    
-    if ([viewController.parentViewController isKindOfClass: [UINavigationController class]]) {
+    UINavigationController *nav = viewController.navigationController;
+    if (nav != nil) {
         
-        attachViewController = viewController.parentViewController;
+        attachViewController = nav;
     }
     
     UIView *v = attachViewController.view;
